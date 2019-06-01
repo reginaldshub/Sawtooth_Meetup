@@ -13,6 +13,8 @@ function prepareTransactions(payload, username) {
 
     payload1 = protobuf1(payload);
 
+    console.log("protobuf returned", payload1)
+
     const payloadBytes = cbor.encode(payload1) //old code
 
     const transactionHeaderBytes = protobuf.TransactionHeader.encode({
