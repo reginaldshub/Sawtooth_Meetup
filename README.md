@@ -29,34 +29,34 @@ iv) steps to execute structured-bank
 
  1) start the validator:
 
-    cd Sawtooth_Meetup/structured-bank
-    docker-compose -f sawtooth-default.yaml up
+   a) cd Sawtooth_Meetup/structured-bank
+   b) docker-compose -f sawtooth-default.yaml up
 
 2) Run Processor
 
-   cd Sawtooth_Meetup/structured-bank/processor
-   npm install
-   node index.js
+   a)cd Sawtooth_Meetup/structured-bank/processor
+   b)npm install
+   c)node index.js
 
 3) Run Client
 
-   cd Sawtooth_Meetup/structured-bank/client
-   npm install
+   a)cd Sawtooth_Meetup/structured-bank/client
+   b)npm install
 
-  a)Create account
+  i) Create account
 
     ex: node app.js 'regi' '{"verb":"create_account","customer_id":"101","customer_name":"regi","savings_balance":5000,"checking_balance":3000}'
 
    'regi'-> is the username  to create keys to sign the transaction
    "checking_balance" -> is the wallet balance
 
-  b)To deposit money from account
+  ii)To deposit money from account
     ex: node app.js 'regi' '{"verb":"deposit_money","customer_id":"101","amount":2000}'
 
-  c)To withdraw money from account
+  iii)To withdraw money from account
   ex: node app.js 'regi' '{"verb":"withdraw_money","customer_id":"101","amount":4000}'
 
-  d)To transfer money from account
+  iv)To transfer money from account
 
    Note: To transfer money  we need to create another account  with  different id.
 
