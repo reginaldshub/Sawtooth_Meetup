@@ -1,0 +1,14 @@
+{
+  "name": "protobuf_terminal",
+  "version": "1.0.0",
+  "description": "Protobuf from terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "protobufjs": "^6.8.8"
+  }
+}
